@@ -5,14 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard 2021</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Resources/main.css">
     <script src="https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables"></script>
 </head>
 <body>
     <div class="Navigation">
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" style="background-color: skyblue;"     href="index.html">LATITUDE</a>
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarDtopdown" aria-expanded="false" aria-label="'Toggle navigation"></button>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarDtopdown" aria-expanded="false" aria-label="'Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDropdownmenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class = "nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropDownMenuLink" role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false">
+    
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Visualization/temparature.html">Temperature</a>
+                            <a class="dropdown-item" href="Visualization/wind.html">Wind</a>
+                            <a class="dropdown-item" href="Visualization/humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="Visualization/cloudiness.html">Cloudiness</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Visualization/comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Visualization/data.html">Data</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="https://github.com/couma-dev/Web-Design-Challenge">My git hub Web-Design-Challenge Repo</a>
+                    </li>
+                </ul>
+            </div>
+        
+                
+        </nav>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12">
+                <div class="box" style="padding-bottom: 25px;">
+                    <h3 class="Title">Summary Of Weather Plots<br> Latitude in comparison to other weather Variables</h3>
+                    <hr>
+                    <p>For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting weather data for 547 cities accross the globe. The source of the data was through an API call to OpenWeatherMap API</p>
+                    <br>
+                    <p>The main Python Library that was utilized to the model the data was Matplot Library and this was used to form a correlation between Latitude (distance from the equator) and several other variables such as Wind Speed, Cloudiness, Humidity and Temparautre</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class ="col-lg-5 col-md-12">
+        <div class="box">
+            <h3 class="title">Graphical Visualizations</h3>
+            <hr>
+            <div class="container">
+                <div class="row" style="padding-bottom: 60px;">
+                    <div class ="col-6"> 
+                        <div class="title"> Latitude Vs Max Temperature</div>
+                        <a href="Visualization/temperature.html">
+                            <img src="Images/Fig1.png" alt="Temperature graph">
+                        </a>
+                    </div>
+                    <div class ="col-6"> 
+                        <div class="title"> Latitude Vs Wind Speed</div>
+                        <a href="Visualization/Wind.html">
+                            <img src="Images/Fig4.png" alt="Wind graph">
+                        </a>
+                    </div>
+                </div>
+                
+
+            </div>
 
         </div>
 
